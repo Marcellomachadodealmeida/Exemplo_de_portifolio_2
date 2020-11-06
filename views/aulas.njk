@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="aulas.css" >
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <title>Portifólio</title>
+
+</head>
+<body>
+  <header>
+    <div class="div-header-aulas">
+      <a href="/">Voltar</a>
+      
+    </div>
+   <h1>Alguns videos que usei como aprendizado </h1>
+   <section class="cards">
+      {% for item in items %}
+        <div class="card" id="{{item.id}}">
+          <div class="card_image-container">
+            <img src="https://img.youtube.com/vi/{{item.id}}/maxresdefault.jpg" alt="{{item.alt}}">
+          </div>
+          <div class="card-content">
+            <p>{{item.title}}</p>
+            <p>{{item.autor}}</p>
+            <p>{{item.time}}</p>
+          </div>
+        </div>
+      {% endfor %}
+     
+   </section>
+   <div class="modal-overlay">
+     <div class="modal">
+       <a  class="close-modal">
+        <i class="material-icons">close</i>
+      </a>
+      <div class="modal-content">
+        <iframe src="https://www.youtube.com/embed/H4MkGzoACpQ" frameborder="0"></iframe>
+      </div>
+     </div>
+   </div>
+   <div class="div-footer">
+    <a href="https://github.com/Marcellomachadodealmeida" target="_black">Github</a>
+    <a href="https://www.linkedin.com/in/marcello-machado-almeida-614814191/" target="_black">Linkedin</a>
+  </div>
+  </header>
+  <script src="/scripts.js"></script>
+</body>
+</html>
