@@ -1,0 +1,117 @@
+*{
+  margin: 0px;
+  padding: 0px;
+}
+body{
+  background-color: #282a36f3;
+  
+}
+.div-header-aulas{
+  width: 100%;
+  height: 30px;
+  padding: 32px;
+  text-align: left;
+  background-color: #282a36;
+}
+.div-header-aulas a{
+  margin-left: 25px;
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  border-bottom: 2px solid rgb(6, 206, 6);
+  transition: 1ms;
+}
+.div-header-aulas a:hover{
+  color: rgb(6, 206, 6);
+  border-color: white;
+}
+h1{
+  
+  color:white;
+  margin-top: 32px;
+  margin-bottom: 50px;
+  text-align: center;
+  font-size: 28px;
+}
+
+/* ==== Cards style ==== */
+
+.cards{
+  max-width: 800px;
+  margin: 0  auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+}
+.card{
+  background-color: #7159c1;
+  cursor: pointer;
+}
+.card_image-container img{
+  width: 100%;
+  height: 220px;
+}
+.card-content{
+  padding: 12px;
+  color: white;
+  font-size: 18px;
+}
+.card-content p{
+  margin-bottom: 5px;
+}
+/* ==== Modal style ==== */
+.modal-overlay{
+  background-color: rgba(0,0,0,0.5);
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top:0;
+  opacity: 0;
+  visibility: hidden;
+}
+.modal{
+  background-color: white;
+  width: 90%;
+  height: 90%;
+  margin: 6vh auto;
+  position: relative;
+}
+.close-modal{
+  position: absolute;
+  right: 16px;
+  top: 10px;
+  cursor: pointer;
+}
+/* ==== Modal style active ==== */
+.modal-overlay.active{
+  opacity: 1;
+  visibility:visible;
+}
+iframe{
+  width: 100%;
+  height: 90%;
+  top: 5%;
+  position: absolute;
+}
+/* >>>>>> style footer <<<<<<< */
+
+.div-footer{
+  width: 100%;
+  margin-top: 50px;
+  height: 50px;
+  padding: 32px;
+  text-align: center; 
+ 
+}
+.div-footer a{
+  margin : 60px; 
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  border-bottom: 2px solid rgb(6, 206, 6);
+  transition: 1ms;
+}
+.div-footer a:hover{
+  color: rgb(6, 206, 6);
+  border-color: white;
+}
